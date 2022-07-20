@@ -1,4 +1,7 @@
  # installing oracle 18c on docker  
+ 
+Link: https://dev.to/adrigomez95/how-to-install-oracle-18c-and-docker-on-ubuntu-20-51cj
+ 
 First extract the image from the docker repository:
 
 ```$ sudo docker pull dockerhelp/docker-oracle-ee-18c```
