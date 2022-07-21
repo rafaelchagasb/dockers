@@ -8,7 +8,7 @@ First extract the image from the docker repository:
 
 We run the Oracle 18c image and assign a port where it is going to communicate:
 
-```$ sudo docker run -p 7000:7000 -it dockerhelp/docker-oracle-ee-18c bash```
+```$ sudo docker run -p 7000:7000 -p 1521:1521 -it dockerhelp/docker-oracle-ee-18c bash```
 
 We run the installation file sh:
 
