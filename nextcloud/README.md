@@ -8,4 +8,5 @@
 --volume nextcloud_aio_mastercontainer:/mnt/docker-aio-config \
 --volume //var/run/docker.sock:/var/run/docker.sock:ro \
 -e NEXTCLOUD_DATADIR="/mnt/c/your-folder" \
+-e SKIP_DOMAIN_VALIDATION=true \
 nextcloud/all-in-one:latest
