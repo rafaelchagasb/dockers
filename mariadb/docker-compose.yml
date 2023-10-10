@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+
+  db2:
+    image: mariadb:10.3
+    privileged: true
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: mypass
