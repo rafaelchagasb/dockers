@@ -1,0 +1,12 @@
+[
+    {
+        "httpRequest": {
+            "path": "/path/:parameter"
+        },
+        "httpResponse": {
+            "body": {
+              }
+              
+        }
+    }
+]
