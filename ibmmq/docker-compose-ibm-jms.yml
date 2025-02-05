@@ -1,0 +1,20 @@
+version: '3.1'
+
+services:
+  ibmmq-jms:
+    image: ibmcom/mq:latest
+    privileged: true
+    restart: always
+    ports:
+      - 9443:9443
+      - 1414:1414
+    environment:
+      - LICENSE=accept
+      - MQ_QMGR_NAME=QM1
+      - MQ_APP_PASSWORD=passw0rd
+      - MQ_ADMIN_PASSWORD=passw0rd
+    volumes:
+      - qm1data:/mnt/mqm
+
+volumes:
+  qm1data:
